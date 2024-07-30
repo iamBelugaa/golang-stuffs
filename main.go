@@ -1,6 +1,8 @@
 package main
 
-import fan_out_bounded "basics/fan-out-bounded"
+import (
+	token_bucket_algorithm "basics/token-bucket-algorithm"
+)
 
 func main() {
 	// println("ConcurrentSafeMaps output :-")
@@ -9,7 +11,9 @@ func main() {
 	// println("\n\nConfinement output :-")
 	// confinement.Confinement()
 
-	fan_out_bounded.FanOutBound()
+	// fan_out_bounded.FanOutBound()
 	// drop_pattern.DropPattern()
 	// timeout.Timeout()
+
+	token_bucket_algorithm.Run()
 }

@@ -10,8 +10,8 @@ import (
 func FanOutBound() {
 	var wg sync.WaitGroup
 
-	work := 20_00_00_000
-	numCPU := runtime.NumCPU()
+	work := 100_00_00_000
+	numCPU := runtime.NumCPU() + runtime.NumCPU()
 	dataChan := make(chan int, numCPU)
 
 	println("Num CPU :", numCPU)
